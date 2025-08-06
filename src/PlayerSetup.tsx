@@ -4,7 +4,7 @@ interface PlayerSetupProps {
   onStart: (players: { name: string; trapLocation: number | null }[]) => void;
 }
 
-const PlayerSetup: React.FC<PlayerSetupProps> = ({ onStart }) => {
+export const PlayerSetup: React.FC<PlayerSetupProps> = ({ onStart }) => {
   const [player1, setPlayer1] = useState('');
   const [player2, setPlayer2] = useState('');
 
@@ -38,6 +38,3 @@ const PlayerSetup: React.FC<PlayerSetupProps> = ({ onStart }) => {
     </form>
   );
 };
-
-export default PlayerSetup;
-
