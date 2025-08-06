@@ -1,0 +1,15 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffe2cc, #ffb6b9);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.main-title, h1, h2, label, button {
+  font-family: 'Fredoka One', cursive, serif;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+}
