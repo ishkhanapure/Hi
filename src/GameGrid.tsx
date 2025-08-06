@@ -7,7 +7,7 @@ interface GameGridProps {
   handleCellClick: (index: number) => void;
 }
 
-const GameGrid: React.FC<GameGridProps> = ({
+export const GameGrid: React.FC<GameGridProps> = ({
   grid,
   currentPlayer,
   placeBomb,
@@ -35,5 +35,3 @@ const GameGrid: React.FC<GameGridProps> = ({
     </div>
   );
 };
-
-export default GameGrid;
