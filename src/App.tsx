@@ -4,7 +4,6 @@ import { PlayerSetup } from './PlayerSetup';
 import { GameGrid } from './GameGrid';
 import { GameUI } from './GameUI';
 
-
 const App: React.FC = () => {
   const {
     players,
@@ -14,7 +13,7 @@ const App: React.FC = () => {
     placeBomb,
     handleCellClick,
     resetGame,
-    setPlayers
+    setPlayers,
   } = useTrapGame();
 
   return (
@@ -24,7 +23,11 @@ const App: React.FC = () => {
         <PlayerSetup onStart={setPlayers} />
       ) : (
         <>
-          <GameUI currentPlayer={currentPlayer} winner={winner} onReset={resetGame} />
+          <GameUI
+            currentPlayer={currentPlayer}
+            winner={winner}
+            onReset={resetGame}
+          />
           <GameGrid
             grid={grid}
             currentPlayer={currentPlayer}
